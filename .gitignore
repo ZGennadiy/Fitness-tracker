@@ -21,7 +21,7 @@ yarn-debug.log*
 yarn-error.log*
 
 # service files in root
-/*.gitattributes
-/gulpfile.js
-/package.json
-/package-lock.json
+# /*.gitattributes
+# /gulpfile.js
+# /package.json
+# /package-lock.json
