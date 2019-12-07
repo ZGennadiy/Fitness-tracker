@@ -26,7 +26,6 @@
     "gulp-sass": "^4.0.2"
   },
   "dependencies": {},
-
   "browserslist": [
     "last 2 version",
     "> 1%",

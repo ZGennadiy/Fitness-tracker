@@ -3,4 +3,57 @@
     padding-top: 20px;
     padding-bottom: 93px;
     background: url('../img/main.png') center (center/cover) no-repeat;
+    color: $another-color;
+
+    &__wrapper {
+        margin-top: 90px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: space-between;
+    }
+
+    &__header {
+        font-weight: 700;
+        font-size: 42px;
+        text-transform: uppercase;
+    }
+
+    &__subheader {
+        font-weight: 500;
+        font-size: 24px;
+        text-transform: uppercase;
+    }
+
+    &__icons {
+        margin-top: 65px;
+        width: 425px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__item {
+        width: 108px;
+        text-align: center;
+        font-size: 14px;
+        font-weight: 500;
+
+        img {
+            display: block;
+            margin: 0 auto 20px auto;
+        }
+    }
+
+    &__link {
+        margin-top: 18px;
+        font-size: 16px;
+        font-weight: 500;
+        a {
+            color: $another-color;
+            text-transform: uppercase;
+            &:hover {
+                color: $another-color
+            }
+        }
+    }
 }
