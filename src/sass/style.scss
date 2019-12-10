@@ -11,4 +11,11 @@
 .container {
     max-width: 950px;
     margin: 0 auto;
+
+    @media (max-width: 991px) {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
 }
+
+
