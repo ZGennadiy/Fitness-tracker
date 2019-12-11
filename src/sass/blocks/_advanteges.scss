@@ -1,6 +1,6 @@
 .advantages {
     min-height: 470px;
-    background-color: #f6f6f6;
+    background-color: $light-color;
     padding-top: 70px;
     padding-bottom: 80px;
 
@@ -23,7 +23,7 @@
         flex-shrink: 0;
 
         @media (max-width: 991px) {
-            justify-content: space-evenly; 
+            justify-content: space-around; 
         }
     }
 
@@ -35,6 +35,11 @@
 
         @media (max-width: 991px) {
             margin-top: 40px;
+        }
+
+        @media (max-width: 575px) {
+            margin-right: 0;
+            margin-left: 0;
         }
 
     }
