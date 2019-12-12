@@ -30,4 +30,12 @@
             font-size: 14px;
         }
     }
+
+    &_submit {
+        margin-top: 20px;
+        width: inherit;
+        max-width: 300px;
+        height: 55px;
+        font-size: 16px;
+    }
 }
