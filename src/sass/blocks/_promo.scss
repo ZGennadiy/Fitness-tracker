@@ -57,6 +57,10 @@
             margin-top: 55px;
             width: 90%;
         }
+
+        @media (max-width: 400px) {
+            margin-right: auto;
+        }
     }
 
     &__item {
@@ -80,6 +84,7 @@
 
             @media (max-width: 400px) {
                 width: 46px;
+                height: auto;
                 margin-bottom: 0;
                 margin-right: 15px;
             }
