@@ -1,0 +1,80 @@
+.catalogue {
+    padding-bottom: 100px;
+
+    &__tabs {
+        margin-top: 70px;
+        list-style: none;
+        margin-bottom: 0;
+        padding-left: 0;
+        display: flex;
+        justify-content: center;
+    }
+
+    &__tab {
+        width: 220px;
+        height: 50px;
+        border: 2px solid $light-border-color;
+        color: $other-color;
+        font-size: 18px;
+        font-weight: 400;
+        text-transform: uppercase;
+        transform: skew(-25deg);
+        cursor: pointer;
+        transition: $animation-speed;
+
+        &:hover {
+            box-shadow: 3px 3px 20px $main-color;
+            border: none;
+
+        }
+
+        &_active {
+            border: none;
+            color: $another-color;
+            background-color: $main-color;
+
+        }
+    }
+
+    &__tab + &__tab {
+        margin-left: 10px;
+    }
+
+    &__tab-name {
+        transform: skew(25deg);
+        text-align: center;
+        line-height: 48px;
+    }
+
+    &__content {
+        padding-top: 60px;
+    }
+
+    &-item {
+        padding: 20px 20px 26px 20px;
+        width: 300px;
+        min-height: 440px;
+        border: 2px solid #e8e8e8;
+        color: $dark-color;
+
+        &__img {
+            display: block;
+            margin: 0 auto;
+            height: 200px;
+            max-width: 100%;
+        }
+
+        &__title {
+            font-size: 16px;
+            font-weight: 700;
+            text-align: center;
+        }
+
+        &__descr {
+            margin-top: 16px;
+            font-size: 14px;
+            font-weight: 400;
+            text-align: center;
+        }
+    }
+}
