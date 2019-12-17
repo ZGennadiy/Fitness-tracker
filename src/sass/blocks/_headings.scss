@@ -3,12 +3,12 @@
     font-size: 30px;
     font-weight: 700;
     text-align: center;
+    text-transform: uppercase;
 
     &_left {
         max-width: 780px;
         color: $another-color;
         font-size: 36px;
-        text-transform: uppercase;
         text-align: left;
 
         @media (max-width: 575px) {

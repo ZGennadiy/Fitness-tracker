@@ -7,10 +7,12 @@
         margin-bottom: 0;
         padding-left: 0;
         display: flex;
+        flex-wrap: wrap;
         justify-content: center;
     }
 
     &__tab {
+        margin-bottom: 10px;
         width: 220px;
         height: 50px;
         border: 2px solid $light-border-color;
@@ -25,7 +27,12 @@
         &:hover {
             box-shadow: 3px 3px 20px $main-color;
             border: none;
+        }
 
+        @media (max-width: 767px) {
+            width: 200px;
+            height: 45px;
+            font-size: 16px;
         }
 
         &_active {
@@ -44,12 +51,21 @@
         transform: skew(25deg);
         text-align: center;
         line-height: 48px;
+
+        @media (max-width: 767px) {
+            line-height: 43px;
+        }
     }
 
     &__content {
         padding-top: 60px;
-        display: flex;
+        display: none;
         flex-wrap: wrap;
+        justify-content: center;
+
+        &_active {
+            display: flex;
+        }
     }
 
     &-item {
@@ -63,6 +79,12 @@
         color: $dark-color;
         overflow: hidden;
 
+        @media (max-width: 767px) {
+            margin-bottom: 10px;
+            margin-left: 5px;
+            margin-right: 5px;
+        }
+
         &__wrapper {
             display: flex;
             width: calc(200% + 20px + 20px);
@@ -73,6 +95,7 @@
             margin-right: 0px;
             transform: translateX(-100%);
             transition: $animation-speed;
+
             &_active {
                 transform: translateX(0%);
                 margin-right: 20px;
@@ -90,6 +113,11 @@
             font-size: 16px;
             font-weight: 700;
             text-align: center;
+            
+            @media (max-width: 400x) {
+                font-size: 14px;
+    
+            }
         }
 
         &__descr {
@@ -151,6 +179,7 @@
             transform: translateX(0%);
             padding-right: 20px;
             transition: $animation-speed;
+            list-style: none;
 
             &_active {
                 transform: translateX(-100%);
