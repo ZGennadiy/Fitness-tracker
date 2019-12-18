@@ -93,7 +93,7 @@
         &__product {
             width: 50%;
             margin-right: 0px;
-            transform: translateX(-100%);
+            transform: translateX(-110%);
             transition: $animation-speed;
 
             &_active {
@@ -114,7 +114,7 @@
             font-weight: 700;
             text-align: center;
             
-            @media (max-width: 400x) {
+            @media (max-width: 400px) {
                 font-size: 14px;
     
             }
@@ -127,6 +127,10 @@
             font-size: 14px;
             font-weight: 300;
             text-align: center;
+
+            @media (max-width: 400px) {
+                font-size: 12px;
+            }
         }
 
         &__link-more {
@@ -138,9 +142,12 @@
             text-decoration: underline;
             text-align: center;
             text-transform: uppercase;
-
             &:hover {
                 color: $main-color;
+            }
+
+            @media (max-width: 400px) {
+                font-size: 12px;
             }
         }
 
@@ -162,12 +169,20 @@
             font-size: 14px;
             font-weight: 300;
             text-decoration: line-through;
+
+            @media (max-width: 400px) {
+                font-size: 12px;
+            }
         }
 
         &__current-price {
             color: #050505;
             font-size: 20px;
             font-weight: 700;
+
+            @media (max-width: 400px) {
+                font-size: 18px;
+            }
         }
 
         &__product-details {
@@ -193,7 +208,6 @@
             font-weight: 300;
             color: #555555;
             margin-bottom: 20px;
-    
             &:before {
                 content: '';
                 position: absolute;
@@ -202,6 +216,10 @@
                 background-color: $main-color;
                 left: -14px;
                 top: 7px;
+            }
+
+            @media (max-width: 400px) {
+                font-size: 12px;
             }
         }
 
@@ -217,9 +235,12 @@
             text-decoration: underline;
             text-transform: uppercase;
             text-align: center;
-
             &:hover {
                 color: $main-color;
+            }
+
+            @media (max-width: 400px) {
+                font-size: 12px;
             }
         }
     }

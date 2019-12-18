@@ -43,5 +43,11 @@
         width: 131px;
         height: 40px;
         font-size: 14px;
+
+        @media (max-width: 400px) {
+            width: 100px;
+            height: 30px;
+            font-size: 12px;
+        }
     }
 }
