@@ -38,4 +38,21 @@ $(document).ready(function(){
 
       toggleSlide('.catalogue-item__link-more');
       toggleSlide('.catalogue-item__link-back');
+
+
+      //Modal
+      $('[data-modal=consultation]').on('click', function(){
+        $('.overlay, #consultation').fadeIn('slow');
+      });
+
+      $('.modal__close').on('click', function() {
+        $('.overlay, #consultation, #order, #thanks').fadeOut('slow')
+      });
+
+      $('.button_mini').each(function(i) {
+        $(this).on('click', function() {
+          $('#order .modal__description').text($('.catalogue-item__title').eq(i).text());
+          $('.overlay, #order').fadeIn('slow');
+        });
+      });
   });
