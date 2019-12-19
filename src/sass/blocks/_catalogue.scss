@@ -23,12 +23,8 @@
         transform: skew(-25deg);
         cursor: pointer;
         transition: $animation-speed;
-
-        &:hover {
-            box-shadow: 3px 3px 20px $main-color;
-            border: none;
-        }
-
+        @include hover-shadow-main;
+        
         @media (max-width: 767px) {
             width: 200px;
             height: 45px;

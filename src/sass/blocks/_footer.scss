@@ -2,6 +2,10 @@
     height: 630px;
     position: relative;
 
+    @media (max-width: 767px) {
+        height: 500px;
+    }
+
     &__contacts {
         padding-top: 50px;
         padding-bottom: 60px;
@@ -53,6 +57,7 @@
             height: 50px;
             border-radius: 50%;
             border: 2px solid $another-color;
+            @include hover-shadow-light;
         }
 
         &-icon {
@@ -62,15 +67,7 @@
 
     &__map {
         @media (max-width: 767px) {
-            display: none;
-        }
-
-        &_mobile {
-            display: none;
-
-            @media (max-width: 767px) {
-                display: block;
-            }
+            height: 30vh;
         }
     }
 }

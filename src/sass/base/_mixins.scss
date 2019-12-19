@@ -1,0 +1,18 @@
+@mixin hover-shadow-main {
+    &:hover {
+        box-shadow: 3px 3px 20px $main-color;
+        border: none;
+    }
+}
+
+@mixin hover-shadow-dark {
+    &:hover {
+        box-shadow: 3px 3px 20px $dark-color;
+    }
+}
+
+@mixin hover-shadow-light {
+    &:hover {
+        box-shadow: 3px 3px 20px $light-color;
+    }
+}

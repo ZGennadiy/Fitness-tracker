@@ -1,16 +1,5 @@
 @import 'base/variables';
-@import 'blocks/promo';
-@import 'blocks/header';
-@import 'blocks/buttons';
-@import 'blocks/advanteges';
-@import 'blocks/headings';
-@import 'blocks/consultation';
-@import 'blocks/forms';
-@import 'blocks/carousel';
-@import 'blocks/catalogue';
-@import 'blocks/feedback';
-@import 'blocks/footer';
-
+@import 'base/mixins';
 
 * {
     font-family: 'Museo Sans Cyrl', sans-serif;
@@ -26,4 +15,15 @@
     }
 }
 
+@import 'blocks/promo';
+@import 'blocks/header';
+@import 'blocks/buttons';
+@import 'blocks/advanteges';
+@import 'blocks/headings';
+@import 'blocks/consultation';
+@import 'blocks/forms';
+@import 'blocks/carousel';
+@import 'blocks/catalogue';
+@import 'blocks/feedback';
+@import 'blocks/footer';
 
