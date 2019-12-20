@@ -5,13 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Fitness tackers</title>
-    <link rel="stylesheet" href="css/bootstrap-reboot.min.css">
-    <link rel="stylesheet" href="css/fonts.css">
-    <link rel="stylesheet" type="text/css" href="css/slick.css"/>
     <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
-    <section class="promo">
+    <section id="up" class="promo">
         <div class="container">
             <header class="header">
                 <a href="#" class="header__logo">
@@ -102,16 +99,16 @@
             </div>
 
             <form id="consultation-form" action="#" class="feed-form feed-form_sm-center">
-                <input class="feed-form__input" name="name" placeholder="Ваше имя" type="text">
-                <input class="feed-form__input" name="phone" placeholder="Ваш телефон">
-                <input class="feed-form__input" name="email" placeholder="Ваш E-mail" type="email">
+                <input required class="feed-form__input" name="name" placeholder="Ваше имя" type="text">
+                <input required class="feed-form__input" name="phone" placeholder="Ваш телефон">
+                <input required class="feed-form__input" name="email" placeholder="Ваш E-mail" type="email">
                 
                 <button class="button button_submit">заказать консультацию</button>
             </form>
         </div>
     </section>
 
-    <section class="carousel">
+    <div class="carousel">
         <div class="container">
             <div class="carousel__inner">
                 <div>
@@ -125,7 +122,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </div>
 
     <section class="catalogue">
         <div class="container">
@@ -530,9 +527,9 @@
             <h2 class="modal__title">Просто заполните форму заявки</h2>
             <div class="modal__description">и мы перезвоним вам в течении 10 минут</div>
             <form action="#" class="feed-form feed-form_sm-center feed-form_mt25">
-                <input class="feed-form__input" name="name" placeholder="Ваше имя" type="text">
-                <input class="feed-form__input" name="phone" placeholder="Ваш телефон">
-                <input class="feed-form__input" name="email" placeholder="Ваш E-mail" type="email">
+                <input required class="feed-form__input" name="name" placeholder="Ваше имя" type="text">
+                <input required class="feed-form__input" name="phone" placeholder="Ваш телефон">
+                <input required class="feed-form__input" name="email" placeholder="Ваш E-mail" type="email">
                 
                 <button class="button button_submit">заказать консультацию</button>
             </form>
@@ -543,9 +540,9 @@
             <h2 class="modal__title">Ваш заказ:</h2>
             <div class="modal__description">Пульсометр Polar FT1</div>
             <form action="#" class="feed-form feed-form_sm-center feed-form_mt25">
-                <input class="feed-form__input" name="name" placeholder="Ваше имя" type="text">
-                <input class="feed-form__input" name="phone" placeholder="Ваш телефон">
-                <input class="feed-form__input" name="email" placeholder="Ваш E-mail" type="email">
+                <input required class="feed-form__input" name="name" placeholder="Ваше имя" type="text">
+                <input required class="feed-form__input" name="phone" placeholder="Ваш телефон">
+                <input required class="feed-form__input" name="email" placeholder="Ваш E-mail" type="email">
                 
                 <button class="button button_submit">Купить</button>
             </form>
@@ -557,6 +554,10 @@
             <div class="modal__description">Наш менеджер свяжется с вами в ближайшее время!</div>
         </div>
     </div>
+
+    <a href="#up" class="page-up">
+        <img src="icons/chevron-circle-up-solid.svg" alt="прокрутка вверх" class="page-up__img">
+    </a>
 
     <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
     <script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>

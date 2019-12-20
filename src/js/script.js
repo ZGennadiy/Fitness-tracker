@@ -94,13 +94,29 @@ $(document).ready(function(){
     $.ajax({
       type: 'POST',
       url: 'mailer/smart.php',
-      date: $(this).serialize()
+      data: $(this).serialize()
     }).done(function() {
       $(this).find('input').val('');
-      $('#consultwtion, #order').fadeOut();
+      $('#consultation, #order').fadeOut();
       $('.overlay, #thanks').fadeIn('slow');
       $('form').trigger('reset');
     });
     return false;
   });
+
+  //Smoth scroll and page up
+  $(window).scroll(function() {
+    if ($(this).scrollTop() > 1200) {
+      $('.page-up').fadeIn();
+    } else {
+        $('.page-up').fadeOut();
+    };
+  });
+
+  $("a[href^='#']").click(function(){
+    const _href = $(this).attr("href");
+    $("html, body").animate({scrollTop: $(_href).offset().top+"px"});
+    return false;
+  });
+
 });
