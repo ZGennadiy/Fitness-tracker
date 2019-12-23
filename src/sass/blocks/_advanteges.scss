@@ -39,6 +39,10 @@
 
     &__img {
         max-width: 70px;
+
+        &_animated-heart {
+            animation: heartbeat 1.5s ease infinite;
+        }
     }
 
     &__name {
