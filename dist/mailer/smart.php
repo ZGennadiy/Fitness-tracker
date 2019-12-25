@@ -11,14 +11,14 @@ $mail->CharSet = 'utf-8';
 // $mail->SMTPDebug = 3;                               // Enable verbose debug output
 
 $mail->isSMTP();                                      // Set mailer to use SMTP
-$mail->Host = 'smtp.mail.com';  // Specify main and backup SMTP servers
+$mail->Host = 'smtp.mail.ru';  // Specify main and backup SMTP servers
 $mail->SMTPAuth = true;                               // Enable SMTP authentication
-$mail->Username = 'stroitel88@mail.ru';                 // Наш логин
-$mail->Password = '32m@il67';                           // Наш пароль от ящика
+$mail->Username = '';                 // Наш логин
+$mail->Password = '';                           // Наш пароль от ящика
 $mail->SMTPSecure = 'ssl';                            // Enable TLS encryption, `ssl` also accepted
 $mail->Port = 465;                                    // TCP port to connect to
  
-$mail->setFrom('stroitel88@mail.ru', 'Pulse');   // От кого письмо 
+$mail->setFrom('', 'Fitness Pulse');   // От кого письмо 
 $mail->addAddress('zinchenko.ga@yandex.ru');     // Add a recipient
 //$mail->addAddress('ellen@example.com');               // Name is optional
 //$mail->addReplyTo('info@example.com', 'Information');
@@ -28,7 +28,7 @@ $mail->addAddress('zinchenko.ga@yandex.ru');     // Add a recipient
 //$mail->addAttachment('/tmp/image.jpg', 'new.jpg');    // Optional name
 $mail->isHTML(true);                                  // Set email format to HTML
 
-$mail->Subject = 'Данные';
+$mail->Subject = 'Заявка на сайте';
 $mail->Body    = '
 		Пользователь оставил данные <br> 
 	Имя: ' . $name . ' <br>
